@@ -1,0 +1,94 @@
+# =======================================
+# 🧠 Git Ignore for Data Visualization Project
+# Project: Data Visualization on Financial Dataset
+# Environment: dv (Python 3.10.18)
+# =======================================
+
+# -----------------------------
+# 🐍 Python cache & compiled files
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.pickle
+
+# -----------------------------
+# 📓 Jupyter Notebook checkpoints
+# -----------------------------
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# -----------------------------
+# 🧪 Virtual environments
+# -----------------------------
+.venv/
+venv/
+env/
+ENV/
+*.env
+
+# -----------------------------
+# 💾 System & temporary files
+# -----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+*.bak
+
+# -----------------------------
+# 🧠 IDE / Editor folders
+# -----------------------------
+.vscode/
+.idea/
+*.code-workspace
+
+# -----------------------------
+# 📊 Data files and raw folders
+# Ignore large raw data files but keep structure
+# -----------------------------
+Data/
+ETFs/
+Stocks/
+
+# ✅ Keep folder structures but ignore heavy data
+!Data/.keep
+!ETFs/.keep
+!Stocks/.keep
+
+# -----------------------------
+# 📦 Archives / Backups
+# -----------------------------
+*.zip
+*.tar
+*.rar
+*.7z
+
+# -----------------------------
+# 📸 Saved Plots, Reports or Exports
+# -----------------------------
+# ⚠️ By default, ignore all image/report files...
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+*.html
+*.out
+
+# ✅ ...But DO NOT ignore Screenshots folder (we keep all visual outputs)
+!Screenshots/
+!Screenshots/**
+
+# -----------------------------
+# ✅ Always keep essential project files
+# -----------------------------
+!README.md
+!Requirements.txt
+!requirements.txt
+!main.py
+!visualization.ipynb
+!.gitignore
